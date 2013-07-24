@@ -12,6 +12,7 @@ https://www.virtualbox.org/wiki/Downloads
 Vagrant:
 http://downloads.vagrantup.com/
 
+*Note: Assumes an Ubuntu 12.04 Precise Pangolin Virtual Machine.
 
 Installation Instructions
 =========================
