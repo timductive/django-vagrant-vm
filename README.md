@@ -9,6 +9,7 @@ Make sure that you have the following things installed before trying to use Vagr
 
 Virtualbox:
 https://www.virtualbox.org/wiki/Downloads
+
 Vagrant:
 http://downloads.vagrantup.com/
 
@@ -20,6 +21,6 @@ Once Virtualbox and Vagrant are installed on your machine just clone this reposi
 
 git clone https://github.com/timductive/django-vagrant-vm.git
 
-cd ./django-vagrant-vm
+cd django-vagrant-vm
 
 vagrant up
