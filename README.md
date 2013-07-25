@@ -23,4 +23,4 @@ git clone https://github.com/timductive/django-vagrant-vm.git
 
 cd django-vagrant-vm
 
-vagrant up
+./vagrant.sh
