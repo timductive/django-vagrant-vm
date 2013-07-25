@@ -2,6 +2,7 @@ Vagrant::Config.run do |config|
   config.vm.define :djangovm do |django_config|
     # Every Vagrant virtual environment requires a box to build off of.
     django_config.vm.box = "precise32"
+    django_config.vm.share_folder "workspace", "/home/vagrant/", "../"
 
     # The url from where the 'config.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
