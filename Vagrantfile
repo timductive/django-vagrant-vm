@@ -10,12 +10,11 @@ Vagrant::Config.run do |config|
 
     # Forward a port from the guest to the host, which allows for outside
     # computers to access the VM, whereas host only networking does not.
-    django_config.vm.forward_port 80, 8080
-    django_config.vm.forward_port 8000, 8001
+    django_config.vm.network :hostonly, "172.16.50.50"    
+    django_config.vm.forward_port 8000, 8000
 
     # Enable provisioning with chef solo, specifying a cookbooks path (relative
     # to this Vagrantfile), and adding some recipes and/or roles.
-    #
     django_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = "cookbooks"
       chef.add_recipe "apt"
@@ -23,9 +22,6 @@ Vagrant::Config.run do |config|
       chef.add_recipe "build-essential"
       chef.add_recipe "git"
       chef.add_recipe "vim"
-    #
-    #   # You may also specify custom JSON attributes:
-    #   chef.json = { :mysql_password => "foo" }
     end
   end
 end
