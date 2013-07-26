@@ -24,3 +24,6 @@ git clone https://github.com/timductive/django-vagrant-vm.git
 cd django-vagrant-vm
 
 ./vagrant.sh
+
+This script takes care of running "vagrant up". Once it has finished you can ssh into your VM with "vagrant ssh".
+There will be a share folder mounted at "/workspace" on the VM. It will automatically share from host "../django-vagrant-vm".
